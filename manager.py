@@ -9,7 +9,8 @@ class Hello(Command):
         print("Hello world !!!")
 
 
-app = create_app()
+develop_mode = "dev"
+app = create_app(develop_mode)
 manager = Manager(app)
 manager.add_command('hello', Hello())
 
