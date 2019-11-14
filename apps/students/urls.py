@@ -4,4 +4,4 @@ from .views import *
 
 
 api = Api(app_students)
-api.add_resource(StudentsView, '/')
+api.add_resource(StudentsView, '/test')
